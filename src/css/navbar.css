@@ -1,0 +1,115 @@
+#navbar {
+    position: fixed;
+    width: 98%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background: linear-gradient(to right, rgb(34, 30, 51), rgb(117, 64, 8));
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#links ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#links ul li {
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+#links ul li a {
+    color: rgb(255, 117, 67);
+    text-decoration: none;
+    font-size: large;
+    font-weight: 600;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+#links ul li:hover a {
+    color: #ff9771
+}
+
+#menu-icon i {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Pop Nav */
+
+.pop-nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: max-content;
+    background-color: rgba(183, 76, 10, 0.856);
+    transition: 0.5s ease-in-out;
+}
+
+.pop-nav #pop-links{
+    margin-top: 30px;
+    line-height: 40px;
+}
+
+.pop-nav #pop-links div{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Bruno Ace SC", sans-serif;
+    font-style: normal;
+    cursor: pointer;
+    margin: 10px 0px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.pop-nav #pop-links div a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.pop-nav .fa-xmark{
+    font-size: 30px;
+}
+
+.pop-nav #cut{
+    border: none;
+    background-color: transparent;
+    float: right;
+    padding: 10px 10px;
+}
+
+.pop-nav #cut:hover .fa-xmark{
+    color: white;
+}
+
+.pop-nav #pop-links div:hover{
+    color:white;
+    background-color: rgb(87, 38, 8);
+}
+
+@media screen and (max-width:495px) {
+    #menu-icon i {
+        display: block;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #navbar{
+        width: 90%;
+    }
+}
